@@ -1,0 +1,146 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #0f0f0f;
+  line-height: 1.4;
+}
+
+/* HEADER */
+header {
+  margin-bottom: 2.5rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  padding: 0.5rem 2rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background: #fff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+nav img {
+  border-radius: 50%;
+}
+
+/* HERO (conteúdo principal) */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: auto 4rem;
+  gap: 1rem;
+  max-width: 950px;
+}
+
+/* AÇÕES DO VÍDEO */
+.video-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap; /* evita quebra feia em telas pequenas */
+}
+
+.channel-infos {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+  min-width: 200px;
+}
+
+.channel-infos img {
+  border-radius: 50%;
+}
+
+/* BOTÕES */
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.btn-subscribe {
+  background-color: #ff0000;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5%;
+  font-size: medium;
+}
+
+.btn-subscribe:hover {
+  background-color: #cc0000;
+}
+
+.actions {
+    display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 0.75rem;
+}
+
+/* LISTA DE AÇÕES */
+.actions-list {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* DESCRIÇÃO */
+.description span {
+  color: #3ea6ff;
+}
+
+.description p {
+  margin-top: 1rem;
+  color: #555;
+  font-size: 0.9rem;
+  text-align: justify;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .hero {
+    margin: auto 1rem;
+  }
+
+  .container {
+    padding: 0.5rem 1rem;
+  }
+
+  .video-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
