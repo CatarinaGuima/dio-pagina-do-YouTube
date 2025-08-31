@@ -17,7 +17,7 @@ O objetivo foi reforçar a prática de posicionamento de elementos, responsivida
 
 ## 📸 Demonstração
 
-> Exemplo de como ficou o projeto (adicione um print do resultado aqui se quiser):
+> Exemplo de como ficou o projeto:
 
 ![Prévia do Projeto](./assets/images/dio.png)
 
