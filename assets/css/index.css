@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* RESET */
 * {
   margin: 0;
@@ -6,7 +8,8 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
   background-color: #fff;
   color: #0f0f0f;
   line-height: 1.4;
