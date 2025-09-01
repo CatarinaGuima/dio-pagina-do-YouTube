@@ -9,6 +9,7 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="./assets/css/index.css" />
+
     <title>Youtube Clone</title>
   </head>
   <body>
@@ -34,7 +35,6 @@
             height="20"
           />
         </div>
-
         <!-- Barra de pesquisa fake -->
         <div class="search-bar">
           <svg
@@ -74,7 +74,6 @@
             />
           </svg>
         </div>
-
         <!-- Ícones de navegação -->
         <nav>
           <svg
@@ -97,7 +96,6 @@
               stroke-linejoin="round"
             />
           </svg>
-
           <svg
             width="24"
             height="24"
@@ -118,7 +116,6 @@
               stroke-linejoin="round"
             />
           </svg>
-
           <img
             src="./assets/images/avatar.jpg"
             alt="Avatar de Catarina Guimarães"
@@ -128,173 +125,194 @@
         </nav>
       </div>
     </header>
-
     <!-- CONTEÚDO PRINCIPAL -->
-    <main class="hero">
-      <!-- VÍDEO -->
-      <article>
-        <iframe
-          width="952"
-          height="537"
-          src="https://www.youtube.com/embed/8BQR-E-P0pc?si=xdUh2Dpo0bCc1vxC"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-        <h3>
-          A Digital Innovation One agora é Dio.me, É tech. É pra dev. É
-          conhecimento que faz acontecer.
-        </h3>
-      </article>
-
-      <!-- AÇÕES DO VÍDEO -->
-      <div class="video-actions">
-        <!-- Canal -->
-        <div class="channel-infos">
-          <img
-            src="./assets/images/channel.jpg"
-            alt="Foto do canal DIO"
-            width="42"
-            height="42"
-          />
-          <div class="channel-text">
-            <h4>DIO</h4>
-            <span>83,3 mil inscritos</span>
+    <main>
+      <div class="hero">
+        <section class="main-video">
+          <!-- VÍDEO -->
+          <article>
+            <iframe
+              width="952px"
+              height="537px"
+              src="https://www.youtube.com/embed/8BQR-E-P0pc?si=xdUh2Dpo0bCc1vxC"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <h3>
+              A Digital Innovation One agora é Dio.me, É tech. É pra dev. É
+              conhecimento que faz acontecer.
+            </h3>
+          </article>
+          <!-- AÇÕES DO VÍDEO -->
+          <div class="video-actions">
+            <!-- Canal -->
+            <div class="channel-infos">
+              <img
+                src="./assets/images/channel.jpg"
+                alt="Foto do canal DIO"
+                width="42"
+                height="42"
+              />
+              <div class="channel-text">
+                <h4>DIO</h4>
+                <span>83,3 mil inscritos</span>
+              </div>
+            </div>
+            <!-- Botão inscrever-se -->
+            <button class="btn-subscribe">Inscrever-se</button>
+            <!-- Lista de ações -->
+            <div class="actions-list">
+              <ul>
+                <li class="actions">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 22H4C3.46957 22 2.96086 21.7893 2.58579 21.4142C2.21071 21.0391 2 20.5304 2 20V13C2 12.4696 2.21071 11.9609 2.58579 11.5858C2.96086 11.2107 3.46957 11 4 11H7M14 9V5C14 4.20435 13.6839 3.44129 13.1213 2.87868C12.5587 2.31607 11.7956 2 11 2L7 11V22H18.28C18.7623 22.0055 19.2304 21.8364 19.5979 21.524C19.9654 21.2116 20.2077 20.7769 20.28 20.3L21.66 11.3C21.7035 11.0134 21.6842 10.7207 21.6033 10.4423C21.5225 10.1638 21.3821 9.90629 21.1919 9.68751C21.0016 9.46873 20.7661 9.29393 20.5016 9.17522C20.2371 9.0565 19.9499 8.99672 19.66 9H14Z"
+                      stroke="black"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <p>2 mil</p>
+                </li>
+                <li class="actions">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17 2H19.67C20.236 1.98999 20.7859 2.18813 21.2154 2.55681C21.6449 2.9255 21.9241 3.43905 22 4V11C21.9241 11.5609 21.6449 12.0745 21.2154 12.4432C20.7859 12.8119 20.236 13.01 19.67 13H17M10 15V19C10 19.7956 10.3161 20.5587 10.8787 21.1213C11.4413 21.6839 12.2044 22 13 22L17 13V2H5.72C5.23767 1.99454 4.76962 2.16359 4.40209 2.47599C4.03457 2.78839 3.79232 3.22309 3.72 3.7L2.34 12.7C2.29649 12.9866 2.31583 13.2793 2.39666 13.5577C2.47749 13.8362 2.6179 14.0937 2.80814 14.3125C2.99839 14.5313 3.23392 14.7061 3.49843 14.8248C3.76294 14.9435 4.05009 15.0033 4.34 15H10Z"
+                      stroke="black"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <p>Não gostei</p>
+                </li>
+                <li class="actions">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18 8C19.6569 8 21 6.65685 21 5C21 3.34315 19.6569 2 18 2C16.3431 2 15 3.34315 15 5C15 6.65685 16.3431 8 18 8Z"
+                      stroke="black"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M6 15C7.65685 15 9 13.6569 9 12C9 10.3431 7.65685 9 6 9C4.34315 9 3 10.3431 3 12C3 13.6569 4.34315 15 6 15Z"
+                      stroke="black"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M18 22C19.6569 22 21 20.6569 21 19C21 17.3431 19.6569 16 18 16C16.3431 16 15 17.3431 15 19C15 20.6569 16.3431 22 18 22Z"
+                      stroke="black"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M8.59 13.51L15.42 17.49"
+                      stroke="black"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M15.41 6.50999L8.59 10.49"
+                      stroke="black"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <p>Compartilhar</p>
+                </li>
+                <li class="actions">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15"
+                      stroke="black"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M7 10L12 15L17 10"
+                      stroke="black"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12 15V3"
+                      stroke="black"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <p>Download</p>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-
-        <!-- Botão inscrever-se -->
-        <button class="btn-subscribe">Inscrever-se</button>
-
-        <!-- Lista de ações -->
-        <ul class="actions-list">
-          <li class="actions">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M7 22H4C3.46957 22 2.96086 21.7893 2.58579 21.4142C2.21071 21.0391 2 20.5304 2 20V13C2 12.4696 2.21071 11.9609 2.58579 11.5858C2.96086 11.2107 3.46957 11 4 11H7M14 9V5C14 4.20435 13.6839 3.44129 13.1213 2.87868C12.5587 2.31607 11.7956 2 11 2L7 11V22H18.28C18.7623 22.0055 19.2304 21.8364 19.5979 21.524C19.9654 21.2116 20.2077 20.7769 20.28 20.3L21.66 11.3C21.7035 11.0134 21.6842 10.7207 21.6033 10.4423C21.5225 10.1638 21.3821 9.90629 21.1919 9.68751C21.0016 9.46873 20.7661 9.29393 20.5016 9.17522C20.2371 9.0565 19.9499 8.99672 19.66 9H14Z"
-                stroke="black"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-
-            <p>2 mil</p>
-          </li>
-          <li class="actions">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M17 2H19.67C20.236 1.98999 20.7859 2.18813 21.2154 2.55681C21.6449 2.9255 21.9241 3.43905 22 4V11C21.9241 11.5609 21.6449 12.0745 21.2154 12.4432C20.7859 12.8119 20.236 13.01 19.67 13H17M10 15V19C10 19.7956 10.3161 20.5587 10.8787 21.1213C11.4413 21.6839 12.2044 22 13 22L17 13V2H5.72C5.23767 1.99454 4.76962 2.16359 4.40209 2.47599C4.03457 2.78839 3.79232 3.22309 3.72 3.7L2.34 12.7C2.29649 12.9866 2.31583 13.2793 2.39666 13.5577C2.47749 13.8362 2.6179 14.0937 2.80814 14.3125C2.99839 14.5313 3.23392 14.7061 3.49843 14.8248C3.76294 14.9435 4.05009 15.0033 4.34 15H10Z"
-                stroke="black"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-
-            <p>Não gostei</p>
-          </li>
-          <li class="actions">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M18 8C19.6569 8 21 6.65685 21 5C21 3.34315 19.6569 2 18 2C16.3431 2 15 3.34315 15 5C15 6.65685 16.3431 8 18 8Z"
-                stroke="black"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M6 15C7.65685 15 9 13.6569 9 12C9 10.3431 7.65685 9 6 9C4.34315 9 3 10.3431 3 12C3 13.6569 4.34315 15 6 15Z"
-                stroke="black"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M18 22C19.6569 22 21 20.6569 21 19C21 17.3431 19.6569 16 18 16C16.3431 16 15 17.3431 15 19C15 20.6569 16.3431 22 18 22Z"
-                stroke="black"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M8.59 13.51L15.42 17.49"
-                stroke="black"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M15.41 6.50999L8.59 10.49"
-                stroke="black"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-
-            <p>Compartilhar</p>
-          </li>
-          <li class="actions">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15"
-                stroke="black"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M7 10L12 15L17 10"
-                stroke="black"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M12 15V3"
-                stroke="black"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-
-            <p>Download</p>
-          </li>
-        </ul>
+          <!-- DESCRIÇÃO -->
+          <div class="description">
+            <h4>
+              8.415 visualizações • 2 de nov. de 2021
+              <span>#dio</span> <span>#dev</span> <span>#borntobeglobal</span>
+            </h4>
+            <p>
+              É tech. É pra dev. É conhecimento que faz acontecer. With you.
+              With everyone. A plataforma colaborativa, de gente ajudando gente,
+              construindo, vibrando juntos. Um lugar de oportunidades para as
+              pessoas e para o mercado, que se conecta com a missão de
+              transformar o Brasil em um polo tecnológico. 🚀
+            </p>
+          </div>
+        </section>
+        <!-- VÍDEOS LATERAIS -->
+        <section class="side-video">
+          <aside id="videos-container"></aside>
+        </section>
       </div>
-
-      <!-- DESCRIÇÃO -->
-      <section class="description">
-        <h4>
-          8.415 visualizações • 2 de nov. de 2021
-          <span>#dio</span> <span>#dev</span> <span>#borntobeglobal</span>
-        </h4>
-        <p>
-          É tech. É pra dev. É conhecimento que faz acontecer. With you. With
-          everyone. A plataforma colaborativa, de gente ajudando gente,
-          construindo, vibrando juntos. Um lugar de oportunidades para as
-          pessoas e para o mercado, que se conecta com a missão de transformar o
-          Brasil em um polo tecnológico. 🚀
-        </p>
-      </section>
     </main>
+    <script src="./data/data.js"></script>
+    <script>
+      const container = document.getElementById("videos-container");
+
+      videos.forEach((video) => {
+        container.innerHTML += `
+      <div class="video-card">
+        <div class="thumbnail">
+          <img src="${video.thumbnail}" alt="${video.title}">
+        </div>
+        <div class="card-infos">
+          <h4>${video.title}</h4>
+          <span>${video.channel}</span>
+          <span>${video.views}</span>
+          <span>${video.time}</span>
+        </div>
+      </div>
+    `;
+      });
+    </script>
   </body>
 </html>
